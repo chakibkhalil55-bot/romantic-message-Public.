@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>رسالة إلى القلب</title>
+  <meta name="description" content="بعض الأشخاص لا يغيبون عن القلب مهما ابتعدوا...">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
+      padding: 24px; color: #f8edf1;
+      font-family: system-ui, "Noto Naskh Arabic", Arial, sans-serif;
+      background:
+        radial-gradient(ellipse at 20% 20%, #4b1d39 0, transparent 42%),
+        radial-gradient(ellipse at 80% 85%, #241a3c 0, transparent 40%),
+        #100d17;
+    }
+    .card {
+      width: min(100%, 560px); padding: 42px 28px; text-align: center;
+      border: 1px solid rgba(255,255,255,.14); border-radius: 26px;
+      background: rgba(255,255,255,.055); backdrop-filter: blur(8px);
+      box-shadow: 0 24px 80px rgba(0,0,0,.35);
+    }
+    .heart { color: #e8a2bb; font-size: 30px; margin-bottom: 18px; }
+    h1 { font-size: clamp(24px, 5vw, 34px); line-height: 1.8; font-weight: 600; margin: 0; }
+    p { color: #d8c8d1; margin: 22px 0 0; line-height: 2; font-size: 16px; }
+    .line { width: 54px; height: 1px; background: #c78ba5; margin: 28px auto 0; }
+    footer { margin-top: 26px; color: #958797; font-size: 12px; letter-spacing: .04em; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="heart" aria-hidden="true">♡</div>
+    <h1>بعض الأشخاص لا يغيبون عن القلب<br>مهما ابتعدوا...</h1>
+    <div class="line"></div>
+    <p>هناك أشياء لا تُقال،<br>لكن القلب يظلّ يتذكّرها بصمت.</p>
+    <footer>رسالة صامتة 🖤</footer>
+  </main>
+
+  <!--
+    لتفعيل إحصاء الزيارات:
+    1) أنشئ Google Analytics 4 property.
+    2) استبدل G-XXXXXXXXXX بمعرّف القياس الخاص بك.
+    3) فعّل القياس المحسّن / Page views.
+    سيُحصي Google Analytics مشاهدات الصفحة، وليس هوية زوار إنستغرام.
+  -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</body>
+</html>
